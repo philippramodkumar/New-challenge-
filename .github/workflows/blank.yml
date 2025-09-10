@@ -1,0 +1,14 @@
+name: Poster Upload Check
+
+on:
+  push:
+    branches:
+      - main  # Or the branch you want to monitor, like 'master' or a specific feature branch.
+
+jobs:
+  display-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Display Success Message
+      run: echo "poster uploaded successfully"
